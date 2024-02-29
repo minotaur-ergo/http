@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor-community/http",
-  "version": "1.4.1",
+  "name": "@minotaur-ergo/http",
+  "version": "1.0.1",
   "description": "A native HTTP plugin for CORS-free requests and file transfers",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -14,7 +14,8 @@
     "fmt": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "prepublishOnly": "npm run build && npm run ios:build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "npm run prepublishOnly && npm release"
   },
   "author": "Max Lynch <max@ionic.io>, Thomas Vidas <thomas@ionic.io>",
   "license": "MIT",
